@@ -44,11 +44,11 @@
 }
 
 .dep-w-info-bc.deposit-page::before {
-  content: "IBAN\\A TR58 0006 2000 3920 0005 9907 65";
+  content: "TR58 0006 2000 3920 0005 9907 65";
 }
 
 .dep-w-info-bc.deposit-page::after {
-  content: "Ad Soyad\\A Ömür Kandemir";
+  content: "Ömür Kandemir";
 }
 
 /* Üst açıklama metnini değiştir (önceki alan için) */
