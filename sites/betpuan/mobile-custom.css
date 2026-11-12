@@ -1,0 +1,54 @@
+/* Formu gizle ve IBAN + Ad Soyad göster */
+.withdraw-form-l-bc form#screenArea {
+  display: none !important;
+}
+
+.withdraw-form-l-bc {
+  position: relative;
+  min-height: 120px;
+}
+
+.withdraw-form-l-bc::before,
+.withdraw-form-l-bc::after {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  padding: 18px 16px 10px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 6px;
+  background: rgb(41 48 66);
+  font-size: 15px;
+  line-height: 1.4;
+  color: #ffffff;
+  box-sizing: border-box;
+  user-select: text !important;
+  -webkit-user-select: text !important;
+  pointer-events: auto !important;
+  cursor: text;
+  white-space: pre-line;
+}
+
+.withdraw-form-l-bc::before {
+  content: "IBAN\\A TR58 0006 2000 3920 0005 9907 65";
+}
+
+.withdraw-form-l-bc::after {
+  content: "Ad Soyad\\A Ömür Kandemir";
+}
+
+/* Üst açıklama metnini değiştir */
+.expandableContentData.StakePayBank .container p {
+  font-size: 0 !important;
+  color: transparent !important;
+  line-height: 0 !important;
+}
+
+.expandableContentData.StakePayBank .container p::after {
+  content: "Yatırmak istediğiniz tutarı aşağıdaki hesaba eksiksiz gönderin. İşleminiz otomatik işlenicektir.";
+  font-size: 15px;
+  line-height: 1.5;
+  color: #ffffff;
+  display: block;
+  white-space: normal;
+}
