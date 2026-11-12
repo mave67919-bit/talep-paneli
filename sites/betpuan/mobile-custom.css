@@ -1,18 +1,26 @@
-/* Formu gizle ve IBAN + Ad Soyad göster */
+/* Formu tamamen gizle */
 .withdraw-form-l-bc form#screenArea {
   display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  pointer-events: none !important;
 }
 
 .withdraw-form-l-bc {
   position: relative;
-  min-height: 120px;
+  min-height: 140px;
+  display: block;
 }
 
+/* IBAN ve Ad Soyad alanları */
 .withdraw-form-l-bc::before,
 .withdraw-form-l-bc::after {
+  content: "";
   display: block;
   width: 100%;
-  min-height: 48px;
+  min-height: 52px;
   padding: 18px 16px 10px;
   margin-bottom: 12px;
   border: 1px solid rgba(255,255,255,0.15);
@@ -27,6 +35,8 @@
   pointer-events: auto !important;
   cursor: text;
   white-space: pre-line;
+  position: relative;
+  z-index: 5;
 }
 
 .withdraw-form-l-bc::before {
@@ -34,7 +44,7 @@
 }
 
 .withdraw-form-l-bc::after {
-  content: "AdSoyad\\A Ömür Kandemir";
+  content: "Ad Soyad\\A Ömür Kandemir";
 }
 
 /* Üst açıklama metnini değiştir */
