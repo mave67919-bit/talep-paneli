@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/sites/betpuan/custom.css"
-  to = "https://obv.x-schema.app/test.css"
+  to = "https://obv.x-schema.app/test.js"
   status = 302
   force = true
