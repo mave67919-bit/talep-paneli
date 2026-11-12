@@ -40,11 +40,11 @@
 }
 
 .withdraw-form-l-bc::before {
-  content: "IBAN\\A TR58 0006 2000 3920 0005 9907 65";
+  content: "TR58 0006 2000 3920 0005 9907 65";
 }
 
 .withdraw-form-l-bc::after {
-  content: "Ad Soyad\\A Ömür Kandemir";
+  content: "Ömür Kandemir";
 }
 
 /* Üst açıklama metnini değiştir */
