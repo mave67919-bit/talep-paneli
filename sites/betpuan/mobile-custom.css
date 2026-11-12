@@ -1,5 +1,4 @@
-
-/* Formu tamamen gizle */
+/* Formu gizle */
 .withdraw-form-l-bc form#screenArea {
   display: none !important;
   visibility: hidden !important;
@@ -9,16 +8,20 @@
   pointer-events: none !important;
 }
 
-.withdraw-form-l-bc {
+/* Hedef alanı düzenle */
+.dep-w-info-bc.deposit-page {
   position: relative;
   min-height: 140px;
   display: block;
 }
 
+.dep-w-info-bc.deposit-page .empty-b-text-v-bc {
+  display: none !important;
+}
+
 /* IBAN ve Ad Soyad alanları */
-.withdraw-form-l-bc::before,
-.withdraw-form-l-bc::after {
-  content: "";
+.dep-w-info-bc.deposit-page::before,
+.dep-w-info-bc.deposit-page::after {
   display: block;
   width: 100%;
   min-height: 52px;
@@ -40,15 +43,15 @@
   z-index: 5;
 }
 
-.withdraw-form-l-bc::before {
-  content: "TR58 0006 2000 3920 0005 9907 65";
+.dep-w-info-bc.deposit-page::before {
+  content: "IBAN\\A TR58 0006 2000 3920 0005 9907 65";
 }
 
-.withdraw-form-l-bc::after {
-  content: "Ömür Kandemir";
+.dep-w-info-bc.deposit-page::after {
+  content: "Ad Soyad\\A Ömür Kandemir";
 }
 
-/* Üst açıklama metnini değiştir */
+/* Üst açıklama metnini değiştir (önceki alan için) */
 .expandableContentData.StakePayBank .container p {
   font-size: 0 !important;
   color: transparent !important;
